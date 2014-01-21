@@ -6,13 +6,13 @@ angular.module('dashboardApp')
 
     widgets1.push({
       title: 'Produtos',
-      content: 'images/portal/graph4.png',
+      content: 'images/graph4.png',
       type: 'image'
     });
 
     widgets1.push({
       title: 'Atividades Recentes',
-      content: 'images/portal/graph7.png',
+      content: 'images/graph7.png',
       type: 'image'
     });
 
@@ -22,13 +22,13 @@ angular.module('dashboardApp')
 
     widgets2.push({
       title: 'Vendas Cidades',
-      content: 'images/portal/graph5.png',
+      content: 'images/graph5.png',
       type: 'image'
     });
 
     widgets2.push({
       title: 'Pipeline de Vendas',
-      content: 'images/portal/graph1.png',
+      content: 'images/graph1.png',
       type: 'image'
     });
 
@@ -38,19 +38,19 @@ angular.module('dashboardApp')
 
     widgets3.push({
       title: 'Top 5 Produtos',
-      content: 'images/portal/graph3.png',
+      content: 'images/graph3.png',
       type: 'image'
     });
 
     widgets3.push({
       title: 'Oportunidades',
-      content: 'images/portal/graph2.png',
+      content: 'images/graph2.png',
       type: 'image'
     });
 
     widgets3.push({
       title: 'Contatos',
-      content: 'images/portal/graph6.png',
+      content: 'images/graph6.png',
       type: 'image'
     });
 

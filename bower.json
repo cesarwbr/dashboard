@@ -10,10 +10,21 @@
     "angular-resource": "1.2.6",
     "angular-cookies": "1.2.6",
     "angular-sanitize": "1.2.6",
-    "angular-route": "1.2.6"
+    "angular-route": "1.2.6",
+    "jquery-ui": "~1.10.3"
   },
   "devDependencies": {
     "angular-mocks": "1.2.6",
     "angular-scenario": "1.2.6"
+  },
+  "install" : {
+    "sources" : {
+      "jquery-ui" : {
+        "mapping": [
+          {"bower_components/jquery-ui/ui/jquery-ui.js": "jquery-ui.js"},
+          {"bower_components/jquery-ui/themes/smoothness/jquery-ui.css": "jquery-ui.css"}
+        ]
+      }
+    }
   }
 }

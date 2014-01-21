@@ -2,6 +2,8 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
 
+@import 'variables';
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -109,8 +111,9 @@ body {
   max-height: 100%;
 }
 
+
 .group {
-  width: 30%;
+  width: 100 / $dashboard-columns - 2 * 1%;
   display: inline;
   float: left;
   margin-left: 1%;

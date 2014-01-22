@@ -3,6 +3,7 @@ node_js:
   - '0.8'
   - '0.10'
 before_script:
+  - 'rvm install ruby-2.0.0-p353'
   - 'rvm use --default 2.0.0'
   - 'gem update --system'
   - 'gem install compass'

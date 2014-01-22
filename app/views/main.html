@@ -1,43 +1,11 @@
 <div class="jumbotron">
     <section id="sortable">
-        <div id="sortable1" sortable-plugin class="group">
-            <div class="widget sortable" ng-repeat="widget in widgets1">
-                <h3 class="handle">{{widget.title}}</h3>
-                <div ng-if="widget.type == 'text'">
-                    {{widget.content}}
-                </div>
-                <div ng-if="widget.type == 'image'">
-                    <img ng-src="{{widget.content}}">
-                </div>
-            </div>
-        </div>
-        <div id="sortable2" sortable-plugin class="group">
-            <div class="widget sortable" ng-repeat="widget in widgets2">
-                <h3 class="handle">{{widget.title}}</h3>
-                <div ng-if="widget.type == 'text'">
-                    {{widget.content}}
-                </div>
-                <div ng-if="widget.type == 'image'">
-                    <img ng-src="{{widget.content}}">
-                </div>
-            </div>
-        </div>
-        <div id="sortable3" sortable-plugin class="group">
-            <div class="widget sortable" ng-repeat="widget in widgets3">
-                <h3 class="handle">{{widget.title}}</h3>
-                <div ng-if="widget.type == 'text'">
-                    {{widget.content}}
-                </div>
-                <div ng-if="widget.type == 'image'">
-                    <img ng-src="{{widget.content}}">
-                </div>
-            </div>
-        </div>
+        <dashboard-column sortable-plugin widgets="widgets1"></dashboard-column>
+        <dashboard-column sortable-plugin widgets="widgets2"></dashboard-column>
+        <dashboard-column sortable-plugin widgets="widgets3"></dashboard-column>
     </section>
 </div>
-
 
 <div class="footer">
     <p>Cesar William Alvarenga</p>
 </div>
-

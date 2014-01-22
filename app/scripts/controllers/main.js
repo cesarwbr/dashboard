@@ -64,8 +64,16 @@ angular.module('dashboardApp')
           handle: '.handle',
           placeholder: 'widget-placeholder',
           forcePlaceholderSize: true,
-          connectWith: '.group'
+          connectWith: 'dashboard-column'
         }).disableSelection();
       }
+    };
+  }).directive('dashboardColumn', function(){
+    return {
+      restrict: 'E',
+      scope: {
+        widgets: '=widgets'
+      },
+      templateUrl: 'views/templates/widget.html'
     };
   });

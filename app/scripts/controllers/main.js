@@ -2,6 +2,7 @@
 
 angular.module('dashboardApp')
   .controller('MainCtrl', function($scope) {
+
     var widgets1 = [];
 
     widgets1.push({
@@ -55,4 +56,16 @@ angular.module('dashboardApp')
     });
 
     $scope.widgets3 = widgets3;
+  }).directive('sortablePlugin', function() {
+    return {
+      restrict: 'A',
+      link: function(scope, element) {
+        angular.element(element).sortable({
+          handle: '.handle',
+          placeholder: 'widget-placeholder',
+          forcePlaceholderSize: true,
+          connectWith: '.group'
+        }).disableSelection();
+      }
+    };
   });

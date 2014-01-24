@@ -64,7 +64,8 @@ angular.module('dashboardApp')
           handle: '.handle',
           placeholder: 'widget-placeholder',
           forcePlaceholderSize: true,
-          connectWith: 'dashboard-column'
+          connectWith: 'dashboard-column',
+          items: '.widget'
         }).disableSelection();
       }
     };
